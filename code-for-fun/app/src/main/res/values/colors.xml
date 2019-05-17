@@ -7,4 +7,7 @@
     <color name="colorTextMain">#554E8F</color>
     <color name="colorTextDescription">#82A0B7</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_dark">#F1F1F1</color>
+    <color name="colorGreenLight">#5DE61A</color>
+
 </resources>

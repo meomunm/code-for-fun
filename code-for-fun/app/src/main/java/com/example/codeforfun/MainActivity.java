@@ -1,11 +1,14 @@
 package com.example.codeforfun;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    private Button btnStarted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +17,16 @@ public class MainActivity extends AppCompatActivity {
 
         //auto hide status bar
         hideStatusBar();
+        intitView();
+        listener();
+    }
+
+    private void intitView() {
+        btnStarted = findViewById(R.id.btn_started);
+    }
+
+    private void listener() {
+        btnStarted.setOnClickListener(this);
     }
 
     private void hideStatusBar(){
@@ -29,6 +42,18 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = (ActionBar) getActionBar();
         if (actionBar != null) {
             actionBar.hide();
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_started:
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                finish();
+                break;
         }
     }
 }

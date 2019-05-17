@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -36,18 +36,29 @@
         android:textColor="@color/colorTextDescription"
         android:textSize="17sp" />
 
-    <Button
-
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+    <com.gigamole.library.ShadowLayout
         android:layout_marginStart="60dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="60dp"
-        android:background="@drawable/border_button"
-        android:elevation="12dp"
-        android:fontFamily="@font/open_sans_semibold"
-        android:text="Get Started"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="15sp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sl_shadow_angle="70"
+        app:sl_shadow_color="#D5EFC9"
+        app:sl_shadow_distance="10dp"
+        app:sl_shadow_radius="7dp"
+        app:sl_shadowed="true">
+
+        <Button
+            android:id="@+id/btn_started"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_button"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+    </com.gigamole.library.ShadowLayout>
+
+
 </LinearLayout>
