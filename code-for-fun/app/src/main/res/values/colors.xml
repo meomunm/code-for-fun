@@ -3,11 +3,19 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    
+
     <color name="colorTextMain">#554E8F</color>
     <color name="colorTextDescription">#82A0B7</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorWhite_dark">#F1F1F1</color>
     <color name="colorGreenLight">#5DE61A</color>
+    <color name="colorCheckbox">#B5B5B5</color>
+    <color name="colorBackgroundListTodo">#F9FCFF</color>
 
+    <color name="checkboxBackground">#91DC5A</color>
+    //color type
+    <color name="yellow_type">#FFD506</color>
+    <color name="green_type">#1ED102</color>
+    <color name="red_dark_type">#D10263</color>
+    <color name="tv_time_item_todo">#C6C6C8</color>
 </resources>

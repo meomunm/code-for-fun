@@ -4,4 +4,11 @@
     <dimen name="dimension_201">201dp</dimen>
     <dimen name="dimension_45">45dp</dimen>
     <dimen name="dimension_139">139dp</dimen>
+    <dimen name="dimension_22sp">22sp</dimen>
+    <dimen name="dimension_12sp">12sp</dimen>
+    <dimen name="dimension_4dp">4dp</dimen>
+    <dimen name="dimension_1dp">1dp</dimen>
+    <dimen name="dimension_18dp">18dp</dimen>
+    <dimen name="dimension_13dp">13dp</dimen>
+    <dimen name="dimension_15sp">15sp</dimen>
 </resources>

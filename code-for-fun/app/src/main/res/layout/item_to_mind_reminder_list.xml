@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
+    android:layout_marginBottom="13dp"
+    android:background="@drawable/background_gardient_reminder"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="23dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_label_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Today reminder"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimension_22sp" />
+
+            <TextView
+                android:id="@+id/tv_description_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension_4dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Meeting with client"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimension_12sp" />
+
+            <TextView
+                android:id="@+id/tv_time_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension_4dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="13.00 PM"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimension_12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_big_bell" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_marginEnd="3dp"
+            android:padding="9dp"
+            android:src="@mipmap/ic_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp" />
+    </RelativeLayout>
+</LinearLayout>

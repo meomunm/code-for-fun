@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorCheckbox" />
+
+    <CheckBox
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="19dp"
+        android:button="@drawable/custom_checkbox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/rubik_regular"
+        android:text="08.00 AM"
+        android:textColor="@color/tv_time_item_todo"
+        android:textSize="@dimen/dimension_12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dimension_13dp"
+        android:layout_marginLeft="@dimen/dimension_13dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Go jogging with Christin"
+        android:textColor="@color/colorTextMain"
+        android:textSize="@dimen/dimension_15sp" />
+
+    <RelativeLayout
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_bell_false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

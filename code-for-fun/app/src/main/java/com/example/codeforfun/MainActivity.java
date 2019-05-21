@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button btnStarted;
 
+    //#83A8E8 to #A1CFF5
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
