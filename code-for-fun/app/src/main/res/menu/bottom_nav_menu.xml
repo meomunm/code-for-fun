@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@mipmap/ic_home"
+        android:title="Recents"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_center"
+        android:enabled="true"
+        android:icon="@mipmap/ic_icon_button_center"
+        android:title="Favorites"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_grid"
+        android:enabled="true"
+        android:icon="@mipmap/ic_grid"
+        android:title="Nearby"
+        app:showAsAction="ifRoom" />
+</menu>
