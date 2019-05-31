@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gardient"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    tools:context=".activities.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -68,37 +68,24 @@
 
     <include layout="@layout/item_to_mind_reminder_list" />
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBackgroundListTodo">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcv_list_todo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:layout_alignBottom="@id/fvb_bottom"-->
+            <!--android:id="@+id/rcv_list_todo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
 
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/bottom_app_bar"
-            style="@style/Widget.MaterialComponents.BottomAppBar"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="bottom"
-            app:backgroundTint="@color/colorWhite"
-            app:fabAlignmentMode="center">
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottom_navigation_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:menu="@menu/bottom_nav_menu"/>
+        <include layout="@layout/item_recyclerview_list_todo"/>
 
-        </com.google.android.material.bottomappbar.BottomAppBar>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
+        <include
+            android:layout_alignParentBottom="true"
+            android:id="@+id/fvb_bottom"
+            layout="@layout/frame_navigation_bottom"
             android:layout_height="wrap_content"
-            app:fabSize="normal"
-            android:src="@mipmap/ic_add"
-            app:layout_anchor="@id/bottom_app_bar"/>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            android:layout_width="match_parent"/>
+    </RelativeLayout>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.codeforfun;
+package com.example.codeforfun.activities;
 
 import android.app.ActionBar;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.codeforfun.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button btnStarted;

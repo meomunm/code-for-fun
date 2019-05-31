@@ -1,8 +1,10 @@
-package com.example.codeforfun;
+package com.example.codeforfun.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.example.codeforfun.R;
 
 public class HomeActivity extends AppCompatActivity {
 
