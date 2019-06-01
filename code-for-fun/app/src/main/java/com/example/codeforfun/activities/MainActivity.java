@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listener();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        hideStatusBar();
+    }
+
     private void intitView() {
         btnStarted = findViewById(R.id.btn_started);
     }

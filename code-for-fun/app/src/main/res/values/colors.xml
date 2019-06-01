@@ -20,5 +20,6 @@
     <color name="tv_time_item_todo">#C6C6C8</color>
     <color name="tv_bottom_selected">#5F87E7</color>
     <color name="tv_bottom_not_selected">#9F9F9F</color>
+    <color name="tv_date_todo">#8B87B3</color>
 
 </resources>
