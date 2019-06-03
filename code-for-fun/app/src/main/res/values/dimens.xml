@@ -12,4 +12,8 @@
     <dimen name="dimension_13dp">13dp</dimen>
     <dimen name="dimension_15sp">15sp</dimen>
     <dimen name="dimension_14sp">14sp</dimen>
+    <dimen name="dimension_20dp">20dp</dimen>
+    <dimen name="dimension_30dp">30dp</dimen>
+    <dimen name="dimension_20sp">20sp</dimen>
+    <dimen name="dimension_44dp">44dp</dimen>
 </resources>

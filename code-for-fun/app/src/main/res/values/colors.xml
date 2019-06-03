@@ -21,5 +21,9 @@
     <color name="tv_bottom_selected">#5F87E7</color>
     <color name="tv_bottom_not_selected">#9F9F9F</color>
     <color name="tv_date_todo">#8B87B3</color>
+    <color name="tv_black">#404040</color>
+    <color name="tv_black_todo_title">#373737</color>
+    <color name="tv_white">#CFCFCF</color>
+
 
 </resources>

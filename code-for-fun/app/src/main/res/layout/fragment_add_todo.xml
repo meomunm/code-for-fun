@@ -1,29 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@android:color/transparent"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/rl_content"
-            android:layout_marginTop="55dp"
-            android:background="@mipmap/back_ground_add_todo"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:background="@mipmap/back_ground_add_todo">
 
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Add new task"
+                android:textColor="@color/tv_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/edt_title_todo"
+                android:layout_marginStart="@dimen/dimension_20dp"
+                android:layout_marginEnd="@dimen/dimension_20dp"
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/tv_title"
+                android:text="Book a table for dinner"
+                android:textColor="@color/tv_black_todo_title"
+                android:textSize="@dimen/dimension_20sp"
+                android:fontFamily="@font/rubik_regular"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/v_separate_one"
+                android:layout_marginTop="@dimen/dimension_30dp"
+                android:layout_below="@id/edt_title_todo"
+                android:background="@color/tv_white"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/dimension_18dp"
+                android:layout_below="@+id/v_separate_one"
+                android:id="@+id/rv_list_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/v_separate_two"
+                android:layout_marginTop="@dimen/dimension_18dp"
+                android:layout_below="@id/rv_list_tag"
+                android:background="@color/tv_white"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:drawableRight="@mipmap/ic_down"
+                android:layout_marginStart="@dimen/dimension_20dp"
+                android:layout_marginEnd="@dimen/dimension_20dp"
+                android:layout_marginTop="@dimen/dimension_44dp"
+                android:layout_below="@id/v_separate_two"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="@dimen/dimension_15sp"
+                android:textColor="@color/tv_black"
+                android:text="Choose date"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
         </RelativeLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            app:layout_anchor="@id/rl_content"
+            android:id="@+id/flbt_close"
             android:layout_width="53dp"
-            app:layout_anchorGravity="center_horizontal"
-            android:layout_height="53dp" />
+            android:layout_height="53dp"
+            android:src="@mipmap/add"
+            app:fabSize="normal"
+            app:layout_anchor="@id/rl_content"
+            app:layout_anchorGravity="center_horizontal" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 </LinearLayout>
