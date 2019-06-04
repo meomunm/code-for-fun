@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:id="@+id/rl_content"
+            android:id="@+id/rl_content_add_todo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="55dp"
@@ -92,7 +92,7 @@
             android:layout_height="53dp"
             android:src="@mipmap/add"
             app:fabSize="normal"
-            app:layout_anchor="@id/rl_content"
+            app:layout_anchor="@id/rl_content_add_todo"
             app:layout_anchorGravity="center_horizontal" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

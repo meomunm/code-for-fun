@@ -6,10 +6,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowInsets;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.codeforfun.R;
@@ -20,7 +18,7 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
-    private LinearLayout llMain;
+    private RelativeLayout llMain;
     private FrameLayout flContentMain;
     private FloatingActionButton flbtAddTodo;
 
@@ -39,15 +37,14 @@ public class HomeActivity extends AppCompatActivity {
 
     private void init() {
         flContentMain = findViewById(R.id.fl_content_main);
-        flbtAddTodo = flContentMain.findViewById(R.id.flbt_add_todo);
-        llMain = findViewById(R.id.ll_main);
+        llMain = findViewById(R.id.rl_content);
+        flbtAddTodo = llMain.findViewById(R.id.flbt_add_todo);
     }
 
     private void listener() {
         flbtAddTodo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(llMain, "Click add todo", Snackbar.LENGTH_SHORT).show();
                 showFragmentAddTodo();
             }
         });

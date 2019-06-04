@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025484650376",
+    "firebase_url": "https://code-for-fun-a05f4.firebaseio.com",
+    "project_id": "code-for-fun-a05f4",
+    "storage_bucket": "code-for-fun-a05f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025484650376:android:848190d554cfbf47",
+        "android_client_info": {
+          "package_name": "com.example.codeforfun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025484650376-6uv7nr32ufq0jlu41kffap23s6lbunuk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codeforfun",
+            "certificate_hash": "9983f5a0cbd2bbb5e7e2eea55957391bae6dd417"
+          }
+        },
+        {
+          "client_id": "1025484650376-2hgcamv9cp4l25ggfgumm3n28e1spp0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3-_aWjKk9-_LGu_VRjSnNw4EW8VxFmV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025484650376-2hgcamv9cp4l25ggfgumm3n28e1spp0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
